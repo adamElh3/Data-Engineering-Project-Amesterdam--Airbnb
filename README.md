@@ -383,9 +383,7 @@ From Github we merge branches.
    configuration.
 
 # Setting up a connection between Apache Airflow and Apache Spark within the Airflow Admin interface:
-   ## a.Access Airflow Web Interface:
-
-   please refer to this repository(Thanks to him)
+   Refer to this repository(Thanks to him)
    <a href="https://github.com/cordon-thiago/airflow-spark" title="About Me">Airflow_Spark</a>
 
 
