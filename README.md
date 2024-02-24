@@ -5,7 +5,7 @@
 In this data engineering project, we leverage the rich Amsterdam Airbnb dataset to perform insightful batch processing and generate valuable analytics for our dashboard. The dataset provides a comprehensive view of Airbnb listings and user interactions in Amsterdam, offering a wealth of information to extract meaningful insights.
 
 # Objective:
-The primary objective is to analyze the Amsterdam Airbnb dataset through hourly batch processing, applying transformations that result in the creation of structured tables for our analytics dashboard. By delving into this dataset, we aim to uncover trends, patterns, and metrics related to the city's Airbnb landscape.
+The primary objective is to analyze the Amsterdam Airbnb dataset through daily batch processing, applying transformations that result in the creation of structured tables for our analytics dashboard. By delving into this dataset, we aim to uncover trends, patterns, and metrics related to the city's Airbnb landscape.
 
 # Dataset: Amsterdam Airbnb
 The Amsterdam Airbnb dataset captures a diverse range of information, including property details, pricing, availability, and user reviews. This dataset is a valuable resource for understanding the dynamics of the city's short-term rental market, providing insights into property popularity, pricing strategies, and customer preferences.
