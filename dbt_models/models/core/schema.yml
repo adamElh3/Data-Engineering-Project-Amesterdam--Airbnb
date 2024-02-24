@@ -1,0 +1,71 @@
+
+version: 2
+
+sources:
+    - name: staging
+      database: amesterdam_airbnb
+      schema: test_env
+      tables:
+        - name: listings
+
+
+models:
+  - name: basic_info
+    columns:
+      - name: Listing_id
+        description: "Unique identifier for the listing."
+      - name: Listing_name
+        description: "Name of the listing."
+      - name: Host_id
+        description: "Unique identifier for the host."
+      - name: Host_name
+        description: "Name of the host."
+      - name: Neighborhood
+        description: "Neighborhood where the listing is located."
+      - name: Latitude
+        description: "Latitude coordinate of the listing."
+      - name: Longitude
+        description: "Longitude coordinate of the listing."
+      - name: Room_type
+        description: "Type of room available in the listing."
+      - name: Price
+        description: "Price per night for the listing."
+      - name: Min_nights
+        description: "Minimum number of nights required for booking."
+      - name: Property_type
+        description: "Type of property (e.g., apartment, house)."
+
+
+  - name: host_info
+    columns:
+      - name: Host_id
+        description: "Unique identifier for the host."
+      - name: Host_name
+        description: "Name of the host."
+      - name: Host_response_time
+        description: "Time taken by the host to respond to inquiries."
+      - name: Host_response_rate
+        description: "Percentage of inquiries to which the host responds."
+      - name: Superhost_status
+        description: "Indicator of whether the host has superhost status."
+      - name: Host_listings_count
+        description: "Number of listings owned by the host."
+      - name: Host_total_listings_count
+        description: "Total number of listings the host has ever had."
+
+
+  - name: review_info
+    columns:
+      - name: Listing_id
+        description: "Unique identifier for the listing."
+      - name: Num_reviews
+        description: "Number of reviews for the listing."
+      - name: last_review
+        description: "Date and time of the last review for the listing."
+      - name: Reviews_per_month
+        description: "Average number of reviews the listing receives per month."
+      - name: Review_scores_rating
+        description: "Overall rating score for the listing based on reviews."
+      - name: Host_id
+        description: "Unique identifier for the host associated with the listing."
+

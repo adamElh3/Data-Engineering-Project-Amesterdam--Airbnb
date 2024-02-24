@@ -1,0 +1,6 @@
+boto3
+psycopg2-binary
+IPython
+pandas
+matplotlib
+seaborn
