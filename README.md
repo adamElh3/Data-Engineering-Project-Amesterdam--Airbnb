@@ -128,7 +128,7 @@ Create structured tables optimized for efficient querying, supporting the analyt
    Confirm the changes by typing 'yes' when prompted.
 
    ### e.Results:
-   work_group,namespace,redshift_database and s3 bucket are added.
+   Work_group,namespace,redshift_database and s3 bucket are added.
    
    ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/aws_bucket.png)
    ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/namespace_workgroup.png)
@@ -165,7 +165,7 @@ After generating your ssh-key:
 
 
 ## Fill credentials:
-we already set up redshift_database using terraform.
+We already set up redshift_database using terraform.
 
 ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/redshift_conn_dbt.png)
 ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/complete_dbt.png)
@@ -240,11 +240,11 @@ Finally, we configure the programming in the triggers section:
 
 ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/create_job4.png)
 
-click Run now!
+Click Run now!
 
 ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/create_job5.png)
 
-when time arrive , the job will be trrigered.
+When time arrive , the job will be trrigered.
 
 ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/create_job6.png)
 
@@ -265,7 +265,7 @@ You can use this command to generate documents.
 
 ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/doc_command.png)
 
-if you want to see your documentations:
+If you want to see your documentations:
 Navigate to the "Docs" Tab:
 
 In the dbt Cloud workspace, find and click on the "Docs" tab.
@@ -369,12 +369,14 @@ From Github we merge branches.
    ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dbt_airflow0.png)
 
    ## e.Choose Connection Type:
-   Select the connection type relevant to dbt. This may involve choosing a database type, specifying the host,port, and credentials required to access the dbt instance.
+   Select the connection type relevant to dbt. This may involve choosing a database type, specifying the host,port, and credentials required to access the dbt 
+   instance.
 
    ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dbt_airflow1.png)
 
    ## f.Save the Connection:
-   Go to dbt cloud ,You can find your User API token in the Profile page under the API Access label,Once all the connection details are accurately filled in, save the connection configuration. This action finalizes the setup and ensures that Airflow can communicate with dbt seamlessly.
+   Go to dbt cloud ,You can find your User API token in the Profile page under the API Access label,Once all the connection details are accurately filled in, 
+   save the connection configuration. This action finalizes the setup and ensures that Airflow can communicate with dbt seamlessly.
 
    ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dbt_airflow2.png)
 
@@ -438,17 +440,17 @@ From Github we merge branches.
    The DAG is scheduled to run daily at midnight ('0 0 * * *'), and it does not catch up on missed runs.
    ### b.Tasks:
    
-   1-install_requirements_task:
+   1-Install_requirements_task:
    
    Task ID: 'install_requirements'
    Executes a Bash command to install Python dependencies specified in '/opt/airflow/spark/app/requirement.txt'.
    
-   2-spark_task:
+   2-Spark_task:
       - Task ID: 'run_spark_task'
       - Executes a Spark job using SparkSubmitOperator.
       - The Spark job runs the script '/opt/airflow/spark/app/spark_airbnb_amesterdam.py'.
    
-   3-dbt_task:
+   3-Dbt_task:
    
    Task ID: 'run_dbt_command'
    Executes a dbt Cloud job using DbtCloudRunJobOperator.
