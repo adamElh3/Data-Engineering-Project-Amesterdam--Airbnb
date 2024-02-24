@@ -139,44 +139,6 @@ Create structured tables optimized for efficient querying, supporting the analyt
 
 
 # Building the Data Pipeline: A Guided Approach
-   ## 1. Creating network and Run docker file alongside docker-compose file 
-
-      docker network create my_network
-      docker-compose up -d --build
-      
-
-   ## 2. Configure Airflow User
-
-   Effortlessly create an Airflow user endowed with admin privileges:
-
-
-      docker-compose run airflow_webserver airflow users create --role Admin --username admin --email admin -- 
-      firstname admin --lastname admin --password admin
-
-   
-   ## 3. Access to the Airflow container,  
-         
-         docker container ps
-         docker exec -it <your_airflow_container_id> /bin/bash
-   
-   ## 4. Validate DAGs
-
-   Ensure the integrity of your Directed Acyclic Graphs (DAGs) with the following command:
-
-         airflow dags list
-   
-   ## 5. Start Airflow Scheduler
-
-   Initiate the DAG by running the scheduler:
-
-         airflow scheduler
-
-   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dag0.png)
-   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/final_dag.png)
-   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/final_dag1.png)
-
-
-
    
 # S3_To_Redshift:
 You have to create a table named listings in redshift using your own schema which you create in the python script.
@@ -328,6 +290,46 @@ From Github we merge branches.
 ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/merge2.png)
 ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/merge3.png)
 ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/merge4.png)
+
+
+
+# Airflow process:
+
+## 1. Creating network and Run docker file alongside docker-compose file 
+
+      docker network create my_network
+      docker-compose up -d --build
+      
+
+   ## 2. Configure Airflow User
+
+   Effortlessly create an Airflow user endowed with admin privileges:
+
+
+      docker-compose run airflow_webserver airflow users create --role Admin --username admin --email admin -- 
+      firstname admin --lastname admin --password admin
+
+   
+   ## 3. Access to the Airflow container,  
+         
+         docker container ps
+         docker exec -it <your_airflow_container_id> /bin/bash
+   
+   ## 4. Validate DAGs
+
+   Ensure the integrity of your Directed Acyclic Graphs (DAGs) with the following command:
+
+         airflow dags list
+   
+   ## 5. Start Airflow Scheduler
+
+   Initiate the DAG by running the scheduler:
+
+         airflow scheduler
+
+   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dag0.png)
+   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/final_dag.png)
+   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/final_dag1.png)
 
          
 
