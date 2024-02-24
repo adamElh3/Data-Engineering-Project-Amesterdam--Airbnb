@@ -86,11 +86,11 @@ Create structured tables optimized for efficient querying, supporting the analyt
    ## 2. Main
    Clone the repository:
    
-       git clone https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb.git
+       git clone https://github.com/adamElh3/Data-Engineering-Project-Amesterdam--Airbnb.git
 
    Navigate to the project directory:
 
-       cd Data-Engineering-Streaming-Project    
+       cd Data-Engineering-Project-Amesterdam--Airbnb   
    
 
    ## 3. Terraform Implementation:
