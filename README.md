@@ -101,8 +101,8 @@ Create structured tables optimized for efficient querying, supporting the analyt
 
    Navigate to the terraform folder and complete credentials.
 
-   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/terraform_complete0.png)
-   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/terraform_complete1.png)
+   ![images_github](images_github/terraform_complete0.png)
+   ![images_github](images_github/terraform_complete1.png)
 
    
 
@@ -130,8 +130,8 @@ Create structured tables optimized for efficient querying, supporting the analyt
    ### e.Results:
    Work_group,namespace,redshift_database and s3 bucket are added.
    
-   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/aws_bucket.png)
-   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/namespace_workgroup.png)
+  ![images_github](images_github/aws_bucket.png)
+  ![images_github](images_github/namespace_workgroup.png)
    
    
    
@@ -145,9 +145,9 @@ You have to create a table named listings in redshift using your own schema whic
 After executing the Spark script using airflow, the data is loaded into Amazon S3 and then further imported into Redshift using the COPY command.
 
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/insert_schema.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/listings_to_aws.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/s3_to_redsh.png)
+![images_github](images_github/insert_schema.png)
+![images_github](images_github/listings_to_aws.png)
+![images_github](images_github/s3_to_redsh.png)
 
 # Setting up an account in dbt Cloud and initializing a new project involves the following steps:
 ## Create repository on Github:
@@ -157,42 +157,42 @@ To add new ssh-key to your github repository : you can refer to the documentatio
 <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account" title="About Me">Connecting-to-github-with-ssh</a>
 
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/add_ssh_key.png)
+![images_github](images_github/add_ssh_key.png)
 
 After generating your ssh-key:
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/git_clone_dbt2.png)
+![images_github](images_github/git_clone_dbt2.png)
 
 
 ## Fill credentials:
 We already set up redshift_database using terraform.
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/redshift_conn_dbt.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/complete_dbt.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/complete_dbt2.png)
+![images_github](images_github/redshift_conn_dbt.png)
+![images_github](images_github/complete_dbt.png)
+![images_github](images_github/complete_dbt2.png)
 
 
 ## Cloning:
 Now it is our turn to configure the Github repository that we have previously created and carry out the second step that we had pending. We select Git Clone     and paste the SSH Key that we copied before. We press the Import button .
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/git_clone_dbt.png)
+![images_github](images_github/git_clone_dbt.png)
 
 It will generate a deployment key that we need to copy into the Github repository configuration.
 
 ## Deploy dbt_key:
 Returning to our Github repository, click on Settings and in the Security section click on Deploy Keys to add it. **It is necessary to check the Allow write access option:**
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/deploy_dbt_key.png)
+![images_github](images_github/deploy_dbt_key.png)
 
 
 If we click the Next button in the dbt project configuration we will have finished.
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/project_ready_dbt.png)
+![images_github](images_github/project_ready_dbt.png)
 
 ## Initialize project:
 We access Develop and we must initialize our project in dbt cloud:
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/initialize_dbt.png)
+![images_github](images_github/initialize_dbt.png)
 
  ### Note : Remember that since it is linked to a repo on github, if you want to work on the dbt cloud GUI you need to first create a branch. To execute any command from GUI, we can use the console that we have in the foot:
 
@@ -200,23 +200,23 @@ To learn how to create profile files, schema files, and SQL files, please refer 
 
 ## Some dbt sql models dags:
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dag_dbt1.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dag_dbt2.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dag_dbt3.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dag_dbt4.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dag_dbt5.png)
+![images_github](images_github/dag_dbt1.png)
+![images_github](images_github/dag_dbt2.png)
+![images_github](images_github/dag_dbt3.png)
+![images_github](images_github/dag_dbt4.png)
+![images_github](images_github/dag_dbt5.png)
 
 
 
 ## Running models using dbt run command:
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dbt_run.png)
+![images_github](images_github/dbt_run.png)
 
 
 ## Tables and views in Redshift serverless:
 After a successful run of models ,if we check redshift , new tables and views are generated .
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/new_tables_dbt1.png)
+![images_github](images_github/new_tables_dbt1.png)
 
 
 
@@ -225,36 +225,36 @@ Dbt includes a scheduler where you can configure jobs to run the models in produ
 
 Before creating the job, the first thing we would have to do is configure a production environment in order to have the development environment differentiated from the deployment environment. To create it, we go to Deploy > Environments and click on the Create Environment button . In Deployment credentials we must indicate the destination redshift dataset. We can pre-create it from aws or type a name and dbt will automatically create it:
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/PRODUCTION_ENV.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/create_job1.png)
+![images_github](images_github/PRODUCTION_ENV.png)
+![images_github](images_github/create_job1.png)
 
 Now we could create a job to publish the development changes to production. To do this, we are going to click on Deploy > Jobs and the Create Job button . Let's specify a name:
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/create_job2.png)
+![images_github](images_github/create_job2.png)
 
 We mark that it generates the documentation and we add the command:dbt build(to build them).
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/create_job3.png)
+![images_github](images_github/create_job3.png)
 
 Finally, we configure the programming in the triggers section:
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/create_job4.png)
+![images_github](images_github/create_job4.png)
 
 Click Run now!
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/create_job5.png)
+![images_github](images_github/create_job5.png)
 
 When time arrive , the job will be trrigered.
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/create_job6.png)
+![images_github](images_github/create_job6.png)
 
 Successful job !
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/job_success_dbt.png)
+![images_github](images_github/job_success_dbt.png)
 
 Tables in production:
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/new_tables_dbt.png)
+![images_github](images_github/new_tables_dbt.png)
 
 
 ## Documentation:
@@ -263,7 +263,7 @@ You can use this command to generate documents.
 
          dbt docs generate
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/doc_command.png)
+![images_github](images_github/doc_command.png)
 
 If you want to see your documentations:
 Navigate to the "Docs" Tab:
@@ -274,8 +274,8 @@ Explore the Documentation:
 The "Docs" tab will provide a navigation menu on the left, allowing you to explore documentation related to models, tests, and other elements in your dbt project.
 You can click on specific models or other artifacts to see detailed information, descriptions, and lineage diagrams.
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/docum1.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/docum2.png)
+![images_github](images_github/docum1.png)
+![images_github](images_github/docum2.png)
 
 ## Create a Pull Request in Your Version Control System:
 Navigate to the version control system's interface.
@@ -285,11 +285,11 @@ Submit the pull request.
 
 From Github we merge branches.
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/merge0.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/merge1.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/merge2.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/merge3.png)
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/merge4.png)
+![images_github](images_github/merge0.png)
+![images_github](images_github/merge1.png)
+![images_github](images_github/merge2.png)
+![images_github](images_github/merge3.png)
+![images_github](images_github/merge4.png)
 
 
 
@@ -327,9 +327,9 @@ From Github we merge branches.
 
          airflow scheduler
 
-   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dag0.png)
-   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/final_dag.png)
-   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/final_dag1.png)
+![images_github](images_github/dag0.png)
+  ![images_github](images_github/final_dag.png)
+![images_github](images_github/final_dag1.png)
 
          
 
@@ -366,19 +366,19 @@ From Github we merge branches.
    which is a unique identifier for this connection. For clarity, name it appropriately, such as       
    "dbt_connection."
 
-   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dbt_airflow0.png)
+  ![images_github](images_github/dbt_airflow0.png)
 
    ## e.Choose Connection Type:
    Select the connection type relevant to dbt. This may involve choosing a database type, specifying the host,port, and credentials required to access the dbt 
    instance.
 
-   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dbt_airflow1.png)
+  ![images_github](images_github/dbt_airflow1.png)
 
    ## f.Save the Connection:
    Go to dbt cloud ,You can find your User API token in the Profile page under the API Access label,Once all the connection details are accurately filled in, 
    save the connection configuration. This action finalizes the setup and ensures that Airflow can communicate with dbt seamlessly.
 
-   ![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/dbt_airflow2.png)
+  ![images_github](images_github/dbt_airflow2.png)
 
    ## j.Verify Connection:
    After saving the connection, it's crucial to perform a verification step. Test the connection from within the Airflow Admin interface to confirm that Airflow    can successfully connect to dbt using the provided          
@@ -393,7 +393,7 @@ From Github we merge branches.
 # Visualisation:
 
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/report.jpg)
+![images_github](images_github/report.jpg)
    
    
 
