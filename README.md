@@ -30,7 +30,7 @@ Create structured tables optimized for efficient querying, supporting the analyt
 
 # Architecture
 
-![alt text](https://github.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/blob/main/images_github/Architecture.jpg)
+![alt text](https://raw.githubusercontent.com/adamElh3/Data-Engineering-project-Amesterdam-Airbnb/main/images_github/Architecture.jpg)
 
 # Technologies
 
